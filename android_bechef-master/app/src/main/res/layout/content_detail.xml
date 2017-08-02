@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="unithon.bechef.ui.DetailActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/ingredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:text="재료"/>
+
+        <View
+                android:id="@+id/sep_ingredient_bar"
+                android:layout_height="2px"
+                android:layout_width="match_parent"
+                android:background="#afafaf"
+                android:layout_margin="10dp"
+                android:layout_below="@id/ingredient"/>
+
+        <LinearLayout
+                android:id="@+id/food_lngre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/sep_ingredient_bar"
+                android:paddingBottom="15dp">
+
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:layout_below="@id/food_lngre"
+                android:text="레시피"/>
+
+        <View
+                android:id="@+id/sep_bar"
+                android:layout_height="2px"
+                android:layout_width="match_parent"
+                android:background="#afafaf"
+                android:layout_margin="10dp"
+                android:layout_below="@id/recipe"/>
+
+        <LinearLayout
+                android:id="@+id/food_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/sep_bar"
+                android:paddingBottom="15dp">
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_ingre_item_layout"
+                android:padding="20dp">
+
+    <TextView
+            android:id="@+id/ingre_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="sobulgogi"/>
+
+    <TextView
+            android:id="@+id/ingre_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="300g"/>
+
+    <View
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#afafaf"
+            android:layout_marginTop="10px"
+            android:layout_below="@id/ingre_name"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+*.pyc
+unithon_server/__pycache__/apis.cpython-35.pyc
+unithon_server/__pycache__/*
+unithon_server/__pycache__
+.idea
+unithon_server/upload/
+migrations/
+migrations
